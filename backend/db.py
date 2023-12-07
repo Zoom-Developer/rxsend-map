@@ -5,10 +5,10 @@ from contextlib import asynccontextmanager
 async def createPool() -> aiomysql.Pool:
 
     pool = await aiomysql.create_pool(
-        host = "world-domination.us.to",
-        user = "rxmap",
-        password = "123rxmap123",
-        db = "rxmap"
+        host = "127.0.0.1",
+        user = "user",
+        password = "password",
+        db = "db"
     )
 
     return pool
